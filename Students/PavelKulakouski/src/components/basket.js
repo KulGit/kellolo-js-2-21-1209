@@ -1,4 +1,4 @@
-export let basket = {
+export default = {
     items: [],
     container: null,
     containerItems: null,
@@ -80,5 +80,3 @@ export let basket = {
         this._render();
     }
 }
-
-basket.init();

@@ -26,12 +26,12 @@
 //     return local;
 // }
 
-export let catalog = {
+export default = {
     container: null,
     items: [],
     basket: null,
     url: 'https://raw.githubusercontent.com/kellolo/static/master/JSON/catalog.json',
-    init() {
+    init(basket) {
         this.container = document.querySelector('#catalog');
         this.basket = basket;
         this._get(this.url)
@@ -107,5 +107,3 @@ export let catalog = {
         }
     }
 }
-
-catalog.init();
