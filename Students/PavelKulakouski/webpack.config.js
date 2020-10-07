@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename:'js/bundle.js'
     },
-    module: {
+    module: { 
         rules:[
             {
                 test:/\.css$/i,
@@ -21,7 +21,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin ({
-            filename: '[name].css',
+            filename: 'css/[name].css',
             chunkFilename: '[id].css',
         }),
         new CopyWebpackPlugin({

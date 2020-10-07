@@ -26,7 +26,7 @@
 //     return local;
 // }
 
-export default = {
+export default  = {
     container: null,
     items: [],
     basket: null,
